@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="Calculation_plugin_ionic" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Calculation_plugin_ionic</name>
+    <js-module name="Calculation_plugin_ionic" src="www/Calculation_plugin_ionic.js">
+        <clobbers target="cordova.plugins.Calculation_plugin_ionic" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Calculation_plugin_ionic">
+                <param name="android-package" value="Calculation_plugin_ionic.Calculation_plugin_ionic" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/Calculation_plugin_ionic.java" target-dir="src/Calculation_plugin_ionic/Calculation_plugin_ionic" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="Calculation_plugin_ionic">
+                <param name="ios-package" value="Calculation_plugin_ionic" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/Calculation_plugin_ionic.m" />
+    </platform>
+</plugin>
