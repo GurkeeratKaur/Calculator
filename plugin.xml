@@ -9,7 +9,7 @@
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="Calculation_plugin_ionic">
-                <param name="android-package" value="Calculation_plugin_ionic.Calculation_plugin_ionic" />
+                <param name="android.package" value="cordova.plugin.Calculation_plugin_ionic.Calculation_plugin_ionic" />
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml" />
@@ -18,7 +18,7 @@
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
             <feature name="Calculation_plugin_ionic">
-                <param name="ios-package" value="Calculation_plugin_ionic" />
+                <param name="ios.package" value="cordova.plugin.Calculation_plugin_ionic" />
             </feature>
         </config-file>
         <source-file src="src/ios/Calculation_plugin_ionic.m" />
